@@ -17,26 +17,45 @@
 
         /* Styling for the big outer box */
         .outer-box {
-            width: 300px;
+            width: 400px;
             height: 300px;
-            background-color: #3498db; /* Blue */
+            background-color: blue; /* Blue */
             border: 4px solid #2980b9;
             
             /* Centers the inner box inside the outer box */
             display: flex;
-            justify-content: bottom;
-            align-item:bottom;
+            justify-content: space-evenly;
+            align-items:flex-start;
             border-radius:10%;
             
         }
 
         /* Styling for the small inner box */
         .inner-box {
-            width: 120px;
-            height: 120px;
-            background-color:green; /* Red */
+            width: 50px;
+            height: 50px;
+            margin:20px;
+            background-color:green; O
             border: black;
             border-radius:20%;
+            text-align:center;
+        }
+        .inner-box2{
+          width: 50px;
+            height: 50px;
+            margin:20px;
+            background-color: pink;
+            border-radius:10%;
+            text-align:center;
+            
+        }
+        .inner-box3{
+            width: 50px;
+            height: 50px;
+            margin:20px;
+            background-color:red;
+            border-radius:10%;
+            text-align:center;
         }
     </style>
 </head>
@@ -45,7 +64,9 @@
     <!-- Outer Box -->
     <div class="outer-box">
         <!-- Inner Box -->
-        <div class="inner-box"></div>
+        <div class="inner-box">A</div>
+        <div class="inner-box2">B</div>
+        <div class="inner-box3">C</div>
     </div>
 
 </body>
