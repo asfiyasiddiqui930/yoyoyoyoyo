@@ -1,0 +1,75 @@
+/* Basic Reset & Setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Page Container to mimic the hand-drawn box */
+.page-container {
+  border: 2px solid #000;
+  min-height: 500px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Structuring with CSS Grid */
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Left section is narrower than the right section */
+  border-bottom: 2px solid #000;
+}
+
+/* Brand Name / Logo Box */
+.brand-name {
+  padding: 20px;
+  border-right: 2px solid #000;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+/* Navigation Container */
+.nav-container {
+  display: flex;
+  justify-content: flex-end; /* Pushes the navbar to the right side */
+  align-items: center;
+  padding: 20px;
+}
+
+/* Navbar Box using Flexbox */
+.navbar {
+  display: flex;
+  border: 2px solid #000;
+}
+
+/* Individual Links inside Navbar */
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Border lines between the links */
+.nav-link:not(:last-child) {
+  border-right: 2px solid #000;
+}
+
+/* Simple hover effect for interactivity */
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* Main Content Section */
+.main-content {
+  flex-grow: 1; /* Makes the main section fill out the rest of the box */
+}

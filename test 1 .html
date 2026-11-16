@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Inside a Box</title>
+    <style>
+        /* Centers the outer box on the screen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Styling for the big outer box */
+        .outer-box {
+            width: 300px;
+            height: 300px;
+            background-color: #3498db; /* Blue */
+            border: 4px solid #2980b9;
+            
+            /* Centers the inner box inside the outer box */
+            display: flex;
+            justify-content: bottom;
+            align-item:bottom;
+            border-radius:10%;
+            
+        }
+
+        /* Styling for the small inner box */
+        .inner-box {
+            width: 120px;
+            height: 120px;
+            background-color:green; /* Red */
+            border: black;
+            border-radius:20%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Outer Box -->
+    <div class="outer-box">
+        <!-- Inner Box -->
+        <div class="inner-box"></div>
+    </div>
+
+</body>
+</html>

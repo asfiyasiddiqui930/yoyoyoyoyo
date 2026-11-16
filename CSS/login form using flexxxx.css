@@ -1,0 +1,13 @@
+.body{
+    height:1000px;
+    width:1000px;
+    background-color: azure;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+}
+.box{
+    height:400px;
+    width:5000px;
+    background-color: rgb(82, 152, 214);
+}
